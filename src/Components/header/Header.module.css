@@ -1,0 +1,47 @@
+.header {
+    background-color: #171717;
+    padding: 0.9em;
+    display: flex;
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Vertically centers the items */
+    top:0;
+    z-index: 999;
+    position: sticky;
+}
+
+.nav {
+    display: flex;
+    align-items: center; /* Ensures both the title and the nav items align vertically */
+    margin-left: auto; /* Pushes the navigation items to the right */
+}
+
+.nav h3 {
+    text-transform:capitalize;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+span{
+    color: #cba0ac;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navList a {
+    color: #fff;
+    display: flex;
+    padding: 0.7em;
+    text-decoration: none;
+}
+
+.navList a:hover {
+    color: #cba0ac; /* Hover effect */
+    text-decoration: underline;
+    transition: .3s step-end;
+    transform: translateY(-5px);
+}
