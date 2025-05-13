@@ -5,24 +5,22 @@ const Header = () => {
     <div className={styles.header}>
       <header>
         <nav className={styles.nav}>
-          <h3>
-            flexy <span>store</span>
-          </h3>
+          <h3>flexy store</h3>
           <ul className={styles.navList}>
             <li>
-              <a href="">Home</a>
+              <a href="home">Home</a>
             </li>
             <li>
-              <a href="">Men</a>
+              <a href="#shop">Shop Now</a>
             </li>
             <li>
-              <a href="">Women</a>
+              <a href="#contact">Contact Us</a>
             </li>
             <li>
               <a href="">Cart</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="">Check out </a>
             </li>
           </ul>
         </nav>

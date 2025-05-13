@@ -30,7 +30,9 @@
   padding: 0.3em;
   color: #333;
 }
-
+.hero a{
+  text-decoration: none;
+}
 .homeBtn{
   background-color: #333;
   border: 3px solid #fff;

@@ -1,18 +1,18 @@
 import "./App.css";
 import Header from "./Components/header/Header";
 import Home from "./Components/home/Home";
-import Featured from "./Components/featured/Featured";
 import Exclusive from "./Components/exclusive/Exclusive";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/footer/Footer";
 import Data from "./Components/data/Data";
+import Contact from "./Components/contact/Contact";
 function App() {
   return (
     <div>
       <Header />
       <Home />
-      <Featured />
       <Exclusive />
       <Data />
+      <Contact />
       <Footer />
     </div>
   );

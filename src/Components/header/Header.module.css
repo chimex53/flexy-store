@@ -21,10 +21,6 @@
     text-transform: uppercase;
 }
 
-span{
-    color: #cba0ac;
-}
-
 .navList {
     list-style: none;
     display: flex;
@@ -44,4 +40,10 @@ span{
     text-decoration: underline;
     transition: .3s step-end;
     transform: translateY(-5px);
+}
+@media(max-width:400px){
+    header h3{
+        font-size: 1rem;
+    }
+
 }
