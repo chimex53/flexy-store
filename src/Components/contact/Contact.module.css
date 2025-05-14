@@ -37,4 +37,7 @@
     .contactForm input,textarea{
         width: 100%;
     }
+    .ContactBtn{
+        width: 100%;
+    }
 }
