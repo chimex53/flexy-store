@@ -208,6 +208,9 @@ h3{
 
 
   @media(max-width:400px){
+    .container{
+      grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    }
     .productBtn{
       width: 100%;
       padding: 0.7em;
