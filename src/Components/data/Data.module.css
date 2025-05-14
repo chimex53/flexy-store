@@ -229,7 +229,7 @@ h3{
       font-weight: 900;
       font-family: Arial, Helvetica, sans-serif;
     }
-    h2::after{
+    .categoryBtn:hover{
       margin-top: 10px;
     }
   }
