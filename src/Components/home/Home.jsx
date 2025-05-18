@@ -1,6 +1,4 @@
 import styles from "./Home.module.css";
-import cta2 from "../../assets/images/cta2.jpg";
-import cta1 from "../../assets/images/cta1.jpg";
 const Home = () => {
   return (
     <section id="home">
@@ -13,10 +11,7 @@ const Home = () => {
           <a href="#shop">
             <button className={styles.homeBtn}>shop now</button>
           </a>
-          <div className={styles.ctaImages}>
-            <img className={styles.cta} src={cta2} alt="" height={50} />
-            <img className={styles.cta} src={cta1} alt="" height={50} />
-          </div>
+          <div className={styles.ctaImages}></div>
         </div>
       </div>
     </section>
