@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 .container {
-  min-height: 60vh;
+  min-height: 100vh;
   background-color: #F3F3F3;
   width: 100%;
   max-width: 100%;
   padding-top: 1px;
-  background-image: linear-gradient(#ecf1f4,#f3f3f3);
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../assets/images/cta2.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+opacity: 1;
+background-attachment: fixed
+
+
 }
 .hero h2 {
   color: #333;
@@ -28,13 +35,14 @@
   font-weight: 700;
   letter-spacing: 1px;
   padding: 0.3em;
-  color: #333;
+  color: #fff;
+  
 }
 .hero a{
   text-decoration: none;
 }
 .homeBtn{
-  background-color: #333;
+  background-color: transparent;
   border: 3px solid #fff;
   border-radius: 10px;
   margin: 0 auto;
@@ -51,7 +59,17 @@
   color: #fff;
   transition: .3s ease-in-out;
 }
-
+.ctaImages,.cta{
+  width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto;
+margin: 0 auto;
+border-radius: 10px;
+margin-top: 20px;
+gap:20px
+}
 @media (max-width:400px){
   .homeBtn{
     width: 50%;
@@ -61,10 +79,15 @@
   .hero h2{
     font-size: 1.5rem;
   }
+  .hero p{
+    font-size: 0.9rem;
+   
+  }
   .container{
     min-height: 50vh;
   }
-  img{
-    width: 30%;
-  }
+ 
+ 
+ 
+ 
 }

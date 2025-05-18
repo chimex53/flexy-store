@@ -15,6 +15,7 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    margin-top: 20px;
   }
 h2::after{
     content: "";
@@ -95,7 +96,7 @@ h2::after{
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1001;
