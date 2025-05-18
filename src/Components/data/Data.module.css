@@ -233,4 +233,7 @@ h3{
     .categoryBtn:hover{
       margin-top: 10px;
     }
+    .modal{
+      width: 80%;
+    }
   }
