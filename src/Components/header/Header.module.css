@@ -1,50 +1,89 @@
+/* HEADER CONTAINER */
 .header {
+    width: 100%;
     background-color: #f3f3f3;
-    padding: 0.9em;
-    display: flex;
-    justify-content: space-between; /* Space between title and nav */
-    align-items: center; /* Vertically centers the items */
-    top:0;
-    z-index: 999;
     position: sticky;
-backdrop-filter: blur(5px);
-}
-
-.nav {
+    top: 0;
+    z-index: 1000;
+  }
+  .logo{
+    text-transform: capitalize;
+    color: #cba0ac;
+  }
+  /* NAVIGATION BAR */
+  .nav {
     display: flex;
-    align-items: center; /* Ensures both the title and the nav items align vertically */
-    margin-left: auto; /* Pushes the navigation items to the right */
-}
-
-.nav h3 {
-    text-transform:capitalize;
-   color: #cba0ac;
-    text-transform: uppercase;
-}
-
-.navList {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  
+  /* NAV LIST */
+  .navList {
+    display: flex;
+    gap: 1.5rem;
     list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.navList a {
-    color: #000000;
-    display: flex;
-    padding: 0.7em;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* LINKS */
+  .navList li a {
     text-decoration: none;
-}
-
-.navList a:hover {
-    color: #cba0ac; /* Hover effect */
-    text-decoration: underline;
-    transition: .3s step-end;
-    transform: translateY(-5px);
-}
-@media(max-width:400px){
-    header h3{
-        font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* HAMBURGER ICON */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1100;
+  
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: crimson;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animate hamburger into X */
+  .bar1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .bar2 {
+    opacity: 0;
+  }
+  
+  .bar3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* MOBILE STYLES */
+  @media screen and (max-width: 768px) {
+    .navList {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #f3f3f3;
+      flex-direction: column;
+      width: 200px;
+      padding: 1rem;
+      transform: translateX(100%);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
-}
+  
+    .navListOpen {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
