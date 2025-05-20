@@ -163,7 +163,7 @@ const ProductList = () => {
                     height={100}
                   />
                   <div>
-                    <p>{item.description}</p>
+                    <p className={styles.cartDescription}>{item.description}</p>
                     <p>
                       ${item.price} × {item.quantity}
                     </p>

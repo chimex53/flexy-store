@@ -17,17 +17,6 @@
     position: relative;
     margin-top: 20px;
   }
-h2::after{
-    content: "";
-    width: 5%;
-    height: 3px;
-    display: block;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #cba0ac;
-}
   .productCard {
     border: 1px solid #ccc;
     padding: 16px;
@@ -105,6 +94,11 @@ h3{
   text-align: center;
   color: #333;
   font-size: 1.5rem;
+}
+.cartDescription{
+  font-size: 0.8rem;
+  color: #000000;
+  margin-bottom: 10px;
 }
 .overlay {
   position: fixed;
@@ -234,6 +228,9 @@ h3{
       margin-top: 10px;
     }
     .modal{
-      width: 80%;
+      width: 100%;
+    }
+    h2{
+      margin-bottom: 10px;
     }
   }
