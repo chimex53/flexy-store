@@ -8,7 +8,7 @@
   }
   .logo{
     text-transform: capitalize;
-    color: #333;
+    color: #2c3e50;
   }
   /* NAVIGATION BAR */
   .nav {
@@ -72,12 +72,12 @@
       right: 0;
       background-color: #f3f3f3;
       flex-direction: column;
-      width: 200px;
+      width: 100%;
+      text-align: center;
       padding: 1rem;
       transform: translateX(100%);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
-  
     .navListOpen {
       transform: translateX(0);
     }

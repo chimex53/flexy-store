@@ -3,11 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container p{
-    background-color: #333;
+.container{
+    background-color: #2c3e50;
   color: #fff;
   text-align: center;
   text-transform: capitalize;
   padding: 20px;
+  height: 50svh;
 }
-
+.footerHeading{
+ color: #fff;
+margin: 0 auto;
+ margin-bottom: 10px;
+ font-family: "Poppins", sans-serif;
+}
+p{
+  text-align: left;
+  padding: 0.7em;
+  font-family: "Poppins", sans-serif;
+}
+.copyright{
+  text-align: center;
+  margin-top: 20px;
+}

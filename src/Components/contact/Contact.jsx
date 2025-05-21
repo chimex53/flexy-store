@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className={styles.contactContainer}>
-        <h2>Contact us</h2>
+        <h2 id={styles.contactHeading}>Contact us</h2>
         <div className={styles.contactForm}>
           <form action="" onSubmit={handleSumbit}>
             <input

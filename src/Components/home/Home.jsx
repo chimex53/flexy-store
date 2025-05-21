@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import { FaLongArrowAltRight } from "react-icons/fa";
 const Home = () => {
   return (
     <section id="home">
@@ -9,7 +10,9 @@ const Home = () => {
           </h2>
           <p>We sell high quality foot wears, sport wears, polo etc.</p>
           <a href="#shop">
-            <button className={styles.homeBtn}>shop now</button>
+            <button className={styles.homeBtn}>
+              shop now <FaLongArrowAltRight size={20} />
+            </button>
           </a>
           <div className={styles.ctaImages}></div>
         </div>

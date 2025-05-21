@@ -2,6 +2,7 @@ import styles from "./Data.module.css";
 import productData from "../products/data";
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { IoCart } from "react-icons/io5";
 
 Modal.setAppElement("#root");
 
@@ -130,7 +131,7 @@ const ProductList = () => {
                 className={styles.productBtn}
                 onClick={() => handleAddToCart(product)}
               >
-                Add to cart
+                <IoCart size={15} color="orange" /> Add to cart
               </button>
             </div>
           ))
